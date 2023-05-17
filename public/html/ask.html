@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar{
+                height: 60px;
+                background-color: black;
+                width: 100%;
+                line-height: 60px;
+                padding: 0 20px;
+                font-size: 20px;
+
+            }
+            
+            .list-item {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+            li a{
+                color: #fff;
+                list-style: none;
+                text-decoration: none;
+            }
+
+            .question-content{
+                text-align: center;
+                padding: 30px;
+                font-weight: 700;
+                font-size: 50px;
+            }
+
+            .btn{
+                height: 36px;
+                min-width: 80px;
+                border-radius: 4px;
+                outline: noen;
+                border: 1px solid transparent;
+                color: #fff;
+                padding: 0 16px;
+                margin: 10px;
+                cursor: pointer;
+            }
+            .btn:hover{
+                opacity: 0.8;
+            }
+            .btn-danger{
+                background-color: #df3a3a;
+            }
+            .btn-success{
+                background-color: #79df3a;
+            }
+            .btn-group{
+                text-align: center;
+            }
+            .main-form{
+                text-align: center;
+            }
+            .content-input{
+                height: 200px;
+                width: 1000px;
+                padding: 10px 20px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="list-item">
+                <li class="logo"><a href="/">LOGO</a></li>
+                <li><a href="/ask">Hỏi nhanh</a></li>
+                <li><a href="/question-detail">Đáp gọn</a></li>
+            </ul>
+        </nav>
+        </nav>
+        <section class="main-content">
+            <h1 class="question-content">Hãy hỏi cộng đồng một câu hỏi đúng/sai
+                hoặc có/không</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="ask-area">
+                        <form class="main-form">
+                            <textarea class="content-input"
+                                name="ask-question" id="ask-question" cols="150"
+                                rows="15"></textarea>
+                            <div class="title">Ký tự còn lại <span
+                                    class="letter">200</span>/200</div>
+                            <br>
+                            <input class="btn btn-success" type="submit"
+                                value="Gửi">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="/js/ask.js"></script>
+    </body>
+</html>
